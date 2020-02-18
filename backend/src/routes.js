@@ -8,6 +8,8 @@ import FileController from './app/controllers/FileController';
 
 import UserController from './app/controllers/UserController';
 
+import AppointmentController from './app/controllers/AppointmentController';
+
 import ProviderController from './app/controllers/ProviderController';
 
 import SessionController from './app/controllers/SessionController';
@@ -25,6 +27,8 @@ routes.post('/sessions', SessionController.store);
 routes.put('/users', authMiddlewares, UserController.update);
 
 routes.get('/providers', authMiddlewares, ProviderController.index);
+
+routes.post('/appointments', authMiddlewares, AppointmentController.store);
 
 routes.post(
   '/files',
