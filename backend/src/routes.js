@@ -30,6 +30,8 @@ routes.get('/providers', authMiddlewares, ProviderController.index);
 
 routes.post('/appointments', authMiddlewares, AppointmentController.store);
 
+routes.get('/appointments', authMiddlewares, AppointmentController.index);
+
 routes.post(
   '/files',
   authMiddlewares,
