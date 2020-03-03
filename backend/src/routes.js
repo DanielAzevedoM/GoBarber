@@ -16,6 +16,8 @@ import SessionController from './app/controllers/SessionController';
 
 import ScheduleController from './app/controllers/ScheduleController';
 
+import NotificationController from './app/controllers/NotificationController';
+
 import authMiddlewares from './app/middlewares/auth';
 
 const routes = new Router();
@@ -35,6 +37,8 @@ routes.post('/appointments', authMiddlewares, AppointmentController.store);
 routes.get('/appointments', authMiddlewares, AppointmentController.index);
 
 routes.get('/schedule', authMiddlewares, ScheduleController.index);
+
+routes.get('/notifications', authMiddlewares, NotificationController.index);
 
 routes.post(
   '/files',
