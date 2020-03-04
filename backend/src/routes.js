@@ -40,6 +40,12 @@ routes.get('/schedule', authMiddlewares, ScheduleController.index);
 
 routes.get('/notifications', authMiddlewares, NotificationController.index);
 
+routes.put(
+  '/notifications/:id',
+  authMiddlewares,
+  NotificationController.update
+);
+
 routes.post(
   '/files',
   authMiddlewares,
