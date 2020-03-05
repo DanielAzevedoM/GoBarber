@@ -36,6 +36,12 @@ routes.post('/appointments', authMiddlewares, AppointmentController.store);
 
 routes.get('/appointments', authMiddlewares, AppointmentController.index);
 
+routes.delete(
+  '/appointments/:id',
+  authMiddlewares,
+  AppointmentController.delete
+);
+
 routes.get('/schedule', authMiddlewares, ScheduleController.index);
 
 routes.get('/notifications', authMiddlewares, NotificationController.index);
