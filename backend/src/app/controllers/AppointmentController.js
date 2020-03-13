@@ -121,9 +121,6 @@ class AppointmentController {
         error: "You don't have permission to cancel this appointment",
       });
     }
-    if ((await appointment) !== appointment.id) {
-      return res.send('1');
-    }
 
     const dateWithSub = subHours(appointment.date, 2);
 
