@@ -11,4 +11,16 @@ export default {
   },
 };
 
-/* Host de email utilizado mailtrap, site "mailtrap.io" */
+/* Host de email utilizado mailtrap, site "mailtrap.io" , que só servirá para 
+ambiente de desenvolvimento. 
+
+Para quando o sistema estiver online, terão essas opções:
+
+Amazon SES
+Mailgun
+Sparkpost
+Mandril(mailchimp)
+Gmail
+
+
+*/
