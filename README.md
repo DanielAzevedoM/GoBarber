@@ -1,5 +1,5 @@
 # GoBarber
-Aplicação de agendamento para uma barbearia fictícia.
+Aplicação de agendamento para uma barbearia fictícia feita durante as aulas do bootcamp gostack.
 
 Tecs:
 - NodeJS
